@@ -122,7 +122,8 @@
 <script setup>
 import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
-import { useWheelchairs } from "@/composables/use-wheelchair";
+import { useWheelchairs } from "@/composables/consume-api/wheelchair.api";
+
 
 const route = useRoute();
 const { wheelchairDetail, loading, fetchWheelchairDetail, updateWheelchair } =

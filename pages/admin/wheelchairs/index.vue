@@ -52,7 +52,7 @@
   
   <script setup>
   import { onMounted } from "vue";
-  import { useWheelchairs } from "@/composables/use-wheelchair";
+  import { useWheelchairs } from "@/composables/consume-api/wheelchair.api";
   import { useFormat } from "@/composables/use-idr-fortmat";
   
   const { wheelchairs, loading, error, fetchWheelchairs } = useWheelchairs();

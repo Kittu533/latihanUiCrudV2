@@ -1,5 +1,5 @@
 <script setup>
-import { useWheelchairs } from "@/composables/use-wheelchair";
+import { useWheelchairs } from "@/composables/consume-api/wheelchair.api";
 
 const { wheelchairs, filteredWheelchairs, searchQuery, availabilityFilter, loading, error } =
   useWheelchairs();

@@ -106,7 +106,7 @@
 
 <script setup>
 import { useRouter, useRoute } from "vue-router";
-import { useWheelchairs } from "@/composables/use-wheelchair";
+import { useWheelchairs } from "@/composables/consume-api/wheelchair.api";
 import { ChevronLeftIcon, AlertCircleIcon, ImageIcon } from "lucide-vue-next";
 import { useFormat } from "@/composables/use-idr-fortmat"; // Import format fungsi
 

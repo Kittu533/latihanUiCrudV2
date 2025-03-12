@@ -119,7 +119,7 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { useRentals } from "@/composables/use-rental";
+import { useRentals } from "@/composables/consume-api/rental.api";
 
 const { rentals, loading, error, message, fetchRentals } = useRentals();
 

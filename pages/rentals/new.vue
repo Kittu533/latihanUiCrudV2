@@ -7,7 +7,5 @@
 
 <script setup lang="ts">
 import RentalForm from "@/components/rentals/rental-form.vue";
-import { useRentals } from "@/composables/use-rental";
-
 const { addRental } = useRentals();
 </script>

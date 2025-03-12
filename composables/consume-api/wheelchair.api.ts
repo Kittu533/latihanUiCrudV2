@@ -151,4 +151,3 @@ export function useWheelchairs() {
         deleteWheelchairById // Fungsi untuk delete kursi roda
     };
 }
-

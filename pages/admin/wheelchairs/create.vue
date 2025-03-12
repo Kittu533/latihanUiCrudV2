@@ -51,7 +51,7 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import { useWheelchairs } from "@/composables/use-wheelchair";
+import { useWheelchairs } from "@/composables/consume-api/wheelchair.api";
 
 const { createWheelchair } = useWheelchairs();
 const router = useRouter();

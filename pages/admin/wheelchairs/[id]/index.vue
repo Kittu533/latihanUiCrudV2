@@ -81,7 +81,7 @@
 
 <script setup>
 import { useRoute } from "vue-router";
-import { useWheelchairs } from "@/composables/use-wheelchair";
+import { useWheelchairs } from "@/composables/consume-api/wheelchair.api";
 import { useFormat } from "@/composables/use-idr-fortmat";
 import { onMounted } from "vue";
 

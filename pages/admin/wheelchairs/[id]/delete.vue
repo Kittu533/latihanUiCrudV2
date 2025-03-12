@@ -94,7 +94,7 @@
 
 <script setup>
 import { useRoute, useRouter } from "vue-router";
-import { useWheelchairs } from "@/composables/use-wheelchair";
+import { useWheelchairs } from "@/composables/consume-api/wheelchair.api";
 import { onMounted, computed } from "vue";
 
 const {

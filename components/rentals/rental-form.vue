@@ -1,20 +1,6 @@
-<script setup lang="ts">
-import { useWheelchairs } from "@/composables/use-wheelchair";
-import { useRentals } from "@/composables/use-rental";
-
-const { availableWheelchairs, error: fetchError } = useWheelchairs();
-const {
-  rental,
-  message,
-  error,
-  addRental,
-  updateRentalPrice,
-  calculateTotalPrice,
-} = useRentals();
-</script>
-
 <template>
-  <form @submit.prevent="addRental" class="space-y-4">p
+  <form @submit.prevent="createRental" class="space-y-4">
+    p
     <div>
       <label class="block">Nama Pelanggan</label>
       <input
@@ -90,3 +76,18 @@ const {
     <p v-if="error" class="text-red-500 mt-4">{{ error }}</p>
   </form>
 </template>
+
+<script setup lang="ts">
+import { useRentals } from "../composables/consume-api/rental.api";
+import { useWheelchairs } from "@/composables/consume-api/wheelchair.api";
+
+const { availableWheelchairs, error: fetchError } = useWheelchairs();
+const {
+  rental,
+  message,
+  error,
+  addRental,
+  updateRentalPrice,
+  calculateTotalPrice,
+} = useRentals();
+</script>

@@ -155,7 +155,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import { useWheelchairs } from "@/composables/use-wheelchair";
+import { useWheelchairs } from "~/composables/consume-api/wheelchair.api";
 import {
   SearchIcon,
   ChevronDownIcon,
